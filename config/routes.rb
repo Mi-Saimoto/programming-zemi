@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :tweets
-  resources :users
+  get 'home' => 'static_pages#home'
+  get 'help' => 'static_pages#help'
+  get 'about' => 'static_pages#about'
+  get 'contact' => 'static_pages#contact'  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  # 以下のコードの意味を改めて理解しよう
   get 'hello-world' => "foo#hello"
 end
